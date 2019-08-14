@@ -1,0 +1,17 @@
+{
+  "name": "mocha_boilerplate",
+  "version": "1.0.0",
+  "description": "Groupxs testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "test-dev": "nodemon --ext js --watch ./ --exec npm test --delay 1",
+    "only-test": "mocha --inspect-brk test/calc.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "chai": "4.1.2",
+    "mocha": "3.5.0",
+    "nodemon": "1.12.0"
+  }
+}
